@@ -1,0 +1,123 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+body {
+    height: 100vh;
+   background: #ffe600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width:100%;
+    height:220px;    
+    position: relative;
+}
+.nose {
+   
+    border-radius:50%;
+    position: absolute;
+    top:40px;
+    left:50%;
+    margin-left:-20px;
+    border-style: solid ;
+    border-width: 20px 20px;
+    border-color: black transparent transparent transparent;
+}
+.eye {
+    width:50px;height:50px;
+    background: #2e2e2e;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid black;
+}
+.eye::after{
+    content: '';
+    display: block;
+    width:20px;
+    height:20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left:10px;
+}
+.eye.left {
+    left:50%;
+    margin-left:80px;
+}
+.eye.right {
+    right:50%;
+    margin-right:80px;
+}
+
+.face {
+    width:80px;
+    height:80px;
+    background: red;
+    border-radius: 50%;
+    position:absolute;
+    border: 2px solid black;
+    top: 80px;  
+}
+
+.face.left{
+    left:50%;
+    margin-left:100px;
+}
+
+.face.right{
+    right:50%;
+    margin-right:100px;
+}
+
+.lip {
+    width: 80px;height:30px;
+    border:2px solid black;
+    position: absolute;
+    top:60px;
+    background: #ffe600;
+}
+.lip.left{
+    transform: rotate(-20deg);
+    border-bottom-left-radius: 100px 60px;
+    border-right: none;border-top: none;
+    right:50%;
+
+}
+.lip.right{
+    transform: rotate(20deg);
+    border-bottom-right-radius: 100px 60px;
+    border-left: none;border-top: none;
+    left:50%;
+}
+.lowlip-wrapper{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left: -70px;
+    z-index: -1;
+    width:140px;
+    height:143px;
+    overflow: hidden;
+}
+.lowlip{
+    width:140px;
+    height:800px;
+    border:2px solid black;
+    background: #9b000a;
+    position: absolute;
+    bottom:0;
+    border-bottom-left-radius: 120px 600px;
+    border-bottom-right-radius: 120px 600px;
+    overflow: hidden;
+}
+.lowlip::after {
+    content: '';
+    width:120px;
+    height: 120px;
+    background: #ff5d62;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left: -60px;
+    border-radius:50%;
+}
