@@ -6,14 +6,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .wrapper{
     width:100%;
     height:220px;    
     position: relative;
 }
 .nose {
-   
     border-radius:50%;
     position: absolute;
     top:40px;
@@ -48,7 +46,6 @@ body {
     right:50%;
     margin-right:80px;
 }
-
 .face {
     width:80px;
     height:80px;
@@ -63,12 +60,10 @@ body {
     left:50%;
     margin-left:100px;
 }
-
 .face.right{
     right:50%;
     margin-right:100px;
 }
-
 .lip {
     width: 80px;height:30px;
     border:2px solid black;
@@ -81,7 +76,6 @@ body {
     border-bottom-left-radius: 100px 60px;
     border-right: none;border-top: none;
     right:50%;
-
 }
 .lip.right{
     transform: rotate(20deg);
